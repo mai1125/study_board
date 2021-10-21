@@ -1,9 +1,10 @@
 #-------------------------
 # Board
 #-------------------------
-# Create
+# CREATE
 POST  http://localhost:3333/api/board/create HTTP/1.1
 content-type: application/json
+
 {
     "category":[{"name":"B"}],
     "title":"あああ",
@@ -12,3 +13,8 @@ content-type: application/json
     "gender":"女",
     "age":3,
 }
+
+###
+# READ
+GET http://localhost:3333/api/board/read  HTTP/1.1
+content-type: application/json
