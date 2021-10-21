@@ -1,0 +1,14 @@
+#-------------------------
+# Board
+#-------------------------
+# Create
+POST  http://localhost:3333/api/board/create HTTP/1.1
+content-type: application/json
+{
+    "category":[{"name":"B"}],
+    "title":"あああ",
+    "text":"かきくけこ",
+    "name":"aokun",
+    "gender":"女",
+    "age":3,
+}
